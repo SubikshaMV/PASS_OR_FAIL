@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Sathyan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-11 07:33:59 PM"/>
+        <attribute name="created" value="U2F0aHlhbjtERVNLVE9QLVJRUDFQSzk7MjAyMy0wOS0xMTswNzoyODoyMiBQTTszMDk4"/>
+        <attribute name="edited" value="U2F0aHlhbjtERVNLVE9QLVJRUDFQSzk7MjAyMy0wOS0xMTswNzozMzo1OSBQTTsxOzMyMTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cps, mat, eee, che, average" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter marks for cps,mat,eee,che out of 100&quot;" newline="True"/>
+            <input variable="cps"/>
+            <input variable="mat"/>
+            <input variable="eee"/>
+            <input variable="che"/>
+            <assign variable="average" expression="(cps+mat+eee+che)/4"/>
+            <if expression="average&gt;=60">
+                <then>
+                    <output expression="&quot;PASS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;FAIL&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
